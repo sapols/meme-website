@@ -4,6 +4,11 @@
    you to simply add your own. This is a basic template
    after all.
    ---------------------------------------------------------*/
+
+   <style>
+   @import url('https://fonts.googleapis.com/css?family=News+Cycle');
+   </style>
+
     body {
 
     }
@@ -22,8 +27,8 @@
 
     }
 
-    article {
-      font-family: "News Gothic",sans-serif;
+    p {
+      font-family: "News Cycle",sans-serif;
     }
 
 
