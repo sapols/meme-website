@@ -1,0 +1,40 @@
+/* Fluid Layout */
+
+HTML {font-size:100%;}
+
+#container {
+    {
+        max-width:100%;
+        margin: auto 0;
+        Overflow: hidden;
+        MAX-width:100%;
+        padding: .625em 1.0548523% 1.5em;
+        /* 10px/16px, 10px/948, 24px/16px */
+
+        .image-container {
+            overflow:hidden;
+        }
+
+        .image-container img {
+            max-width:100%;
+            height:auto;
+            display:block;
+        }
+
+        p {
+            min-width: 200px;
+            min-height: 200px;
+            max-height: 300px;
+        }
+
+        .main {
+            float: left;
+            width: 65.8227848%; /* 624/948 */
+        }
+
+        aside {
+            float: right;
+            width: 31.6455696%; /* 300/948 */
+        }
+    }
+}
