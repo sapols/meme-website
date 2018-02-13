@@ -14,6 +14,10 @@
 
     html,
     body {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
       font-family: "News Cycle", sans-serif;
       width: 100%;
     }
