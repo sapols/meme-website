@@ -72,9 +72,14 @@
       margin: 2em 0;
     }
 
+    #sisterPages li{
+      margin-left: 2em;
+    }
+
     footer{
       text-align: center;
       padding: 2em;
+      background: #ddd;
     }
 
     .screen-reader-only{
