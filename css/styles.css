@@ -5,11 +5,17 @@
    after all.
    ---------------------------------------------------------*/
 
-   @import url('https://fonts.googleapis.com/css?family=News+Cycle');
 
+   /* NOTE:
+   color: teal
+   yellow
+    */
+   @import url('https://fonts.googleapis.com/css?family=News+Cycle|Josefin+Slab');
+
+    html,
     body {
       font-family: "News Cycle", sans-serif;
-
+      width: 100%;
     }
     /* Default link styling */
     a:link { color:#0271fb; }
@@ -22,10 +28,59 @@
 /* ---------------------------------------------------------
    Author's styles
    ---------------------------------------------------------*/
-    body {
-      font-family: "News Cycle", sans-serif;
 
+    h1,
+    h2,
+    h3{
+      font-family: "Josefin Slab", serif;
     }
+
+    h1{
+      font-size: 2em;
+      text-align: center
+    }
+
+    header{
+      padding: 1em;
+      width: 100%;
+    }
+
+    header img{
+      width: calc(100vw - 2em);
+      height: auto;
+      margin: 0 auto;
+    }
+
+    nav ul{
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 1em 0;
+
+      li{
+        display: block;
+        margin: 0 1em;
+      }
+    }
+
+    main{
+      padding: 1em;
+    }
+
+    section{
+      margin: 2em 0;
+    }
+
+    footer{
+      text-align: center;
+      padding: 2em;
+    }
+
+    .screen-reader-only{
+      display: none;
+    }
+
 
     /* p {
       font-family: "News Cycle",sans-serif;
@@ -65,5 +120,7 @@
         overflow:hidden;
     }
 
-    figure img { border:1px solid #000; }
+    figure img {
+      border:1px solid #000;
+    }
 }

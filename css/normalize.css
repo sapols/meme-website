@@ -5,6 +5,13 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all .3s;
+}
+
 html {
   font-family: "News Gothic", sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
