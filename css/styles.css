@@ -7,8 +7,8 @@
 
 
    /* NOTE:
-   color: teal
-   yellow
+   color: teal?
+   yellow?
     */
    @import url('https://fonts.googleapis.com/css?family=News+Cycle|Josefin+Slab');
 
@@ -90,6 +90,43 @@
       display: none;
     }
 
+    #previousMemes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px 10px;
+
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #previousMemes img {
+        max-width: 100%;
+    }
+    #covfefeImg {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    #aliensImg {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    #bannonImg {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+    }
+    #comparisonsImg {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+    }
 
     /* p {
       font-family: "News Cycle",sans-serif;
