@@ -50,7 +50,7 @@
     }
 
     header img{
-      width: calc(100vw - 2em);
+      width: calc(100vw - 3em);
       height: auto;
       margin: 0 auto;
     }
