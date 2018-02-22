@@ -1,0 +1,173 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for
+   you to simply add your own. This is a basic template
+   after all.
+   ---------------------------------------------------------*/
+
+
+   /* NOTE:
+   color: teal?
+   yellow?
+    */
+   @import url('https://fonts.googleapis.com/css?family=News+Cycle|Josefin+Slab');
+
+    html,
+    body {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+      font-family: "News Cycle", sans-serif;
+      width: 100%;
+    }
+    /* Default link styling */
+    a:link { color:#0271fb; }
+    a:visited { color:#bd02fb; }
+    a:hover, a:focus { color:#000; }
+    a:active { color:#fb0e02; }
+
+
+
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+
+    h1,
+    h2,
+    h3{
+      font-family: "Josefin Slab", serif;
+    }
+
+    h1{
+      font-size: 2em;
+      text-align: center
+    }
+
+    header{
+      padding: 1em;
+      width: 100%;
+    }
+
+    header img{
+      width: calc(100vw - 2em);
+      height: auto;
+      margin: 0 auto;
+    }
+
+    nav ul{
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 1em 0;
+
+      li{
+        display: block;
+        margin: 0 1em;
+      }
+    }
+
+    main{
+      padding: 1em;
+    }
+
+    section{
+      margin: 2em 0;
+    }
+
+    #sisterPages li{
+      margin-left: 2em;
+    }
+
+    footer{
+      text-align: center;
+      padding: 2em;
+      background: #ddd;
+    }
+
+    .screen-reader-only{
+      display: none;
+    }
+
+    #previousMemes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px 10px;
+
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #previousMemes img {
+        max-width: 100%;
+    }
+    #covfefeImg {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    #comparisonsImg {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    #bannonImg {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+    }
+    #aliensImg {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+    }
+
+
+    /* p {
+      font-family: "News Cycle",sans-serif;
+    } */
+
+
+/* ---------------------------------------------------------
+   Print styles
+   ---------------------------------------------------------*/
+@media print {
+    * {
+        color:#000 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+        background:transparent !important;
+    }
+    html { background-color:#fff; }
+    /* Hide navigation */
+    nav { display:none; }
+
+    /* Show link destinations in brackets after the link text */
+    a[href]:after { content: " (" attr(href) ") "; }
+    a[href] {
+        font-weight:bold;
+        text-decoration:underline;
+        color:#06c;
+        border:none;
+    }
+    /* Don't show link destinations for JavaScript or internal links */
+    a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
+
+    /* Show abbr title value in brackets after the text */
+    abbr[title]:after { content: " (" attr(title) ")"; }
+
+    figure {
+        margin-bottom:1em;
+        overflow:hidden;
+    }
+
+    figure img {
+      border:1px solid #000;
+    }
+}
