@@ -22,6 +22,8 @@
 
     <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+    <link rel="SHORTCUT ICON" href="./multimedia/favicon.ico" />
+    <link rel="icon" href="./multimedia/favicon.ico" type="image/ico" />
 </head>
 <body>
 
@@ -30,7 +32,7 @@
     <header role="banner">
 
         <h1>Reputation Management</h1>
-        <img src="./multimedia/repMan.png" alt="A meme of the guy from Office Space that says 'If you could check your online reviews and do damage control, that would be great.'">
+
 
         <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
         NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
@@ -41,6 +43,8 @@
                 <li><a href="./memeGen.html">Meme Generator</a></li>
             </ul>
         </nav>
+
+        <img src="./multimedia/repMan.png" alt="A meme of the guy from Office Space that says 'If you could check your online reviews and do damage control, that would be great.'">
 
     </header>
 
@@ -66,6 +70,7 @@
                             <li><a href="#reputation">What is a Reputation?</a></li>
                             <li><a href="#managing">Managing your Reputation</a></li>
                             <li><a href="#youth">Getting in on the Youth Market</a></li>
+                            <li><a href="#submit">Submit a Case</a></li>
                             <!-- <li><a href="#instructions">Blah</a></li> -->
                         </ul>
                     </nav>
@@ -113,6 +118,33 @@
 
                </section>
 
+               <section>
+                 <h3>Submit a Problem with your Reputation</h3>
+                 <!-- Form -->
+                 <form>
+                    <label for="NAME">Your Name</label>
+                    <input id="NAME" type="text" name="customer">
+                    <br><br>
+                    <label for="COMPANY">Affiliated Organization</label>
+                    <input id="COMPANY" type="text" name="company">
+                    <br><br>
+                   <label for="FAULT">Who's Fault Is It?</label>
+                   <select id="FAULT" name="fault">
+                     <option value="mine">Mine</option>
+                     <option value="boss">My Boss</option>
+                     <option value="lawyer">The Lawyers</option>
+                     <option value="none">No One In Particular</option>
+                     <option value="cheryl">Cheryl</option>
+                   </select>
+                   <br><br>
+                   <label for="PROBLEM">What's your Problem?</label>
+                   <br>
+                   <textarea id="PROBLEM" name="problem" rows="10" cols="30"></textarea>
+                   <br><br>
+                   <input type="submit">
+                 </form>
+               </section>
+
             </section>
 
         </main>
@@ -133,14 +165,14 @@
 
     </div>
 
+    <!-- The <address> element contains contact information for the nearest <section> or <body> element. This example is for the <body> -->
+    <address>
+      <p>For further information, please contact <a href="mailto:shawn.polson@colorado.edu">A really cool guy</a>.</p>
+    </address>
     <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
     <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
     <footer role="contentinfo">
 
-        <!-- The <address> element contains contact information for the nearest <section> or <body> element. This example is for the <body> -->
-        <address>
-          <p>For further information, please contact <a href="mailto:shawn.polson@colorado.edu">A really cool guy</a>.</p>
-        </address>
 
         <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2016' is a date -->
         <small>Copyright Dawkins Advertising &copy; <time datetime="2018">2018</time></small>
