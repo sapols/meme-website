@@ -86,8 +86,8 @@
       background: #ddd;
     }
 
-    #wrap{
-      max-width: 900px;
+    .wrap{
+      max-width: 1200px;
       width: 90%;
       margin: 0 auto;
     }
@@ -108,6 +108,7 @@
 
     #previousMemes img {
         max-width: 100%;
+        margin: 1em;
     }
     #covfefeImg {
         grid-column-start: 1;
@@ -219,4 +220,35 @@
     figure img {
       border:1px solid #000;
     }
+}
+
+/* ---------------------------------------------------------
+    Media Queries
+   --------------------------------------------------------- */
+
+/* For Max width of site or greater */
+@media screen and (min-width: 75em) {
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .two-column-max>*{
+    width: 48%;
+  }
+  .section-header{
+    width: 100%;
+  }
+
+  #reputation, #managing, #youth {
+    width: 30%;
+  }
+}
+
+/* For Minimal Single Column Website */
+@media screen and (max-width: 45em) {
+  #previousMemes{
+    display: block;
+  }
 }
