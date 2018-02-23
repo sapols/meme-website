@@ -133,6 +133,7 @@
         grid-row-start: 2;
         grid-row-end: span 1;
     }
+
     #memeGen {
       position: relative;
       max-width: 100%;
@@ -142,12 +143,38 @@
       padding-left: 13%;
       padding-right: 13%;
     }
+
     legend{
       height: 0;
       overflow: hidden;
     }
+
     fieldset{
       border: none;
+    }
+
+    #pricesTable {
+        border-collapse: collapse;
+        width: 90%;
+    }
+    #pricesTable td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    #pricesTable th {
+        font-family: "Josefin Slab", serif;
+        font-size: 1.17em;
+        font-style: italic;
+    }
+    #pricesTable tr:nth-child(even) {
+        background-color: #eeeeee;
+    }
+    #pricesTableColHdr2, #pricesTableColHdr3, #pricesTableColHdr4 {
+        text-align: center;
+    }
+    caption {
+        caption-side: bottom;
     }
 
 
