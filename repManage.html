@@ -38,13 +38,33 @@
 
         <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
         NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
-        <nav role="navigation" class="siteNav">
+
+        <div class="topnav" id="myTopnav">
+          <a href="./index.html">Home</a>
+          <a href="./repManage.html" class="active">Reputation Management</a>
+          <a href="./previousWorks.html">Previous Works</a>
+          <a href="./memeGen.html">MemeGenerator</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        </script>
+
+        <!-- <nav role="navigation" class="siteNav">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./previousWorks.html">Previous Works</a></li>
                 <li><a href="./memeGen.html">Meme Generator</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
         <img src="./multimedia/repMan.png" alt="A meme of the guy from Office Space that says 'If you could check your online reviews and do damage control, that would be great.'">
 
