@@ -37,15 +37,34 @@
 
         <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
         NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
-        <nav aria-labelledby="site-navigation">
+        <!-- <nav aria-labelledby="site-navigation"> -->
             <!-- This can contain your site navigation either in an unordered list or even a paragraph that contains links that allow users to navigate your site -->
-            <h2 id="site-navigation" class="screen-reader-only">Site Navigation</h2>
-            <ul>
-              <li><a href="previousWorks.html">Previous Works</a>
-              <li><a href="repManage.html">Reputation Management</a>
-              <li><a href="memeGen.html">Meme Generator</a>
-            </ul>
-        </nav>
+            <!-- <h2 id="site-navigation" class="screen-reader-only">Site Navigation</h2> -->
+            <!-- <ul> -->
+              <!-- <li><a href="previousWorks.html">Previous Works</a> -->
+              <!-- <li><a href="repManage.html">Reputation Management</a> -->
+              <!-- <li><a href="memeGen.html">Meme Generator</a> -->
+            <!-- </ul> -->
+        <!-- </nav> -->
+
+        <div class="topnav" id="myTopnav">
+          <a href="./index.html" class="active">Home</a>
+          <a href="./repManage.html" >Reputation Management</a>
+          <a href="./previousWorks.html">Previous Works</a>
+          <a href="./memeGen.html">MemeGenerator</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        </script>
 
         <div id="slider-container">
           <div id="slide-1">
